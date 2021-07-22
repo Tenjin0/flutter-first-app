@@ -14,17 +14,11 @@ class Home extends StatelessWidget {
         actions: [],
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: Text(
-          "body",
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: 'IndieFlower',
-          ),
-        ),
+      body: Row(
+        children: [
+          Text('Body'),
+          TextButton(onPressed: () {}, child: Text('click'))
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
